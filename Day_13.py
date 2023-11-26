@@ -39,4 +39,5 @@ def mutate(a_list):
     print(b_list)
 
 
-mutate([2, 5, 8, 7, 6])
+# mutate([2, 5, 8, 7, 6])
+
