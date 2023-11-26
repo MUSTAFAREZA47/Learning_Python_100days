@@ -5,7 +5,7 @@ for fruit in fruits:
     print(fruit + " " + "pie")
     print(fruits)
 
-print(len(fruits))
+# print(len(fruits))
 
 scores = [78, 65, 89, 86]
 
@@ -13,7 +13,7 @@ high_score = 0
 for score in scores:
     if score > high_score:
         high_score = score
-print(high_score)
+# print(high_score)
 
 # Project -------> Average Height of Students
 # Input a Python list of student heights
