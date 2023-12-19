@@ -35,7 +35,7 @@ black_fur_color = len(data[data["Primary Fur Color"] == "Black"])
 
 fur_color_count = {
     "Primary Fur Color": [" Gray", "Cinnamon", "Black"],
-    "Number of Squarel": [gray_fur_color, cinnamon_fur_color, black_fur_color]
+    "Number of Squirrel": [gray_fur_color, cinnamon_fur_color, black_fur_color]
 }
 
 pandas.DataFrame(fur_color_count).to_csv("../Day_25/fur_color_count.csv")
