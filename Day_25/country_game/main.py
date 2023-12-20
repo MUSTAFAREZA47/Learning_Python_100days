@@ -3,11 +3,11 @@ import pandas
 
 screen = turtle.Screen()
 screen.title("U.S States Game")
-image = "../day-25-us-states-game-start/blank_states_img.gif"
+image = "../country_game/blank_states_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 
-data = pandas.read_csv("../day-25-us-states-game-start/50_states.csv")
+data = pandas.read_csv("50_states.csv")
 
 all_state = data["state"].to_list()
 # print(all_state)
