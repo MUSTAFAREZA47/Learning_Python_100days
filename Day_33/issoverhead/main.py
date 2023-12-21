@@ -42,9 +42,9 @@ def is_night():
     if time_now >= sunset or time_now <= sunrise:
         return True
 
-
-while True:
-    time.sleep(0.1)
+is_iss_running = True
+while is_iss_running:
+    time.sleep(60)
     if is_iss_overhead() and is_night():
         connection = smtplib.SMTP("smtp.rediffmail.com")
         connection.starttls()
@@ -54,4 +54,5 @@ while True:
             to_addrs=my_email,
             msg="Subject:Look up 👆🏻\n\nISS is over your head, see in the sky."
         )
+        is_iss_running = False
 
