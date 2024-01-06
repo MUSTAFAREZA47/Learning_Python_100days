@@ -1,8 +1,12 @@
 import requests
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-USERNAME = "moonxa"
-TOKEN = "thisissecret"
+
+USERNAME = os.getenv("USERNAME")
+TOKEN = os.getenv("TOKEN")
 GRAPH_ID = "test-graph"
 
 pixela_endpoint = "https://pixe.la/v1/users"
